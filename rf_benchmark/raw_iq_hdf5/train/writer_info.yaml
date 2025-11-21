@@ -1,0 +1,5 @@
+root: datasets/rf_benchmark/raw_iq_hdf5/train
+overwrite: true
+batch_size: 11
+num_workers: 4
+complete: true

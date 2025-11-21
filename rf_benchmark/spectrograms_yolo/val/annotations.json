@@ -1,0 +1,3781 @@
+{
+  "split": "val",
+  "fft_size": 64,
+  "num_iq_samples_dataset": 4096,
+  "sample_rate": 10000000.0,
+  "images": [
+    {
+      "id": 0,
+      "file_name": "000000.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.272216796875,
+          "y_center": 0.17748757149150873,
+          "width": 0.111328125,
+          "height": 0.15625
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "file_name": "000001.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.805419921875,
+          "y_center": 0.4794650325592492,
+          "width": 0.1064453125,
+          "height": 0.359375
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.232666015625,
+          "y_center": 0.9199645795685932,
+          "width": 0.11181640625,
+          "height": 0.125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.752685546875,
+          "y_center": 0.42692302817539196,
+          "width": 0.17333984375,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "file_name": "000002.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.306396484375,
+          "y_center": 0.39253233067967663,
+          "width": 0.1220703125,
+          "height": 0.390625
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.8966064453125,
+          "y_center": 0.2897065262934797,
+          "width": 0.117919921875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.7769775390625,
+          "y_center": 0.8426400342954803,
+          "width": 0.188232421875,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "file_name": "000003.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.5054931640625,
+          "y_center": 0.9781228117015449,
+          "width": 0.192626953125,
+          "height": 0.04375437659691004
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.2901611328125,
+          "y_center": 0.18196325852400386,
+          "width": 0.127197265625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "file_name": "000004.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.7921142578125,
+          "y_center": 0.44884728793774253,
+          "width": 0.168701171875,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "file_name": "000005.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 6,
+      "file_name": "000006.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.8677978515625,
+          "y_center": 0.10877114451781456,
+          "width": 0.144775390625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "file_name": "000007.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.212158203125,
+          "y_center": 0.7750579531008189,
+          "width": 0.13134765625,
+          "height": 0.15625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.6719970703125,
+          "y_center": 0.8612818634308037,
+          "width": 0.139404296875,
+          "height": 0.25
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.486083984375,
+          "y_center": 0.7644427717670872,
+          "width": 0.150390625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.432373046875,
+          "y_center": 0.3451372833049886,
+          "width": 0.16259765625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.866455078125,
+          "y_center": 0.2483425929763977,
+          "width": 0.1611328125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "file_name": "000008.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 9,
+      "file_name": "000009.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 10,
+      "file_name": "000010.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.2186279296875,
+          "y_center": 0.8192778676997232,
+          "width": 0.168212890625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "file_name": "000011.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.2264404296875,
+          "y_center": 0.6090511763657959,
+          "width": 0.179931640625,
+          "height": 0.15625
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "file_name": "000012.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.8729248046875,
+          "y_center": 0.9574542784424728,
+          "width": 0.115966796875,
+          "height": 0.08509144311505444
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.4898681640625,
+          "y_center": 0.050088585092430526,
+          "width": 0.169189453125,
+          "height": 0.1001771700848612
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "file_name": "000013.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.7049560546875,
+          "y_center": 0.8544255143454349,
+          "width": 0.169677734375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "file_name": "000014.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.1640625,
+          "y_center": 0.9614849887536536,
+          "width": 0.1435546875,
+          "height": 0.0770300224926928
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "file_name": "000015.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.919189453125,
+          "y_center": 0.3171914713710119,
+          "width": 0.15625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "file_name": "000016.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.2222900390625,
+          "y_center": 0.2834519628985471,
+          "width": 0.166748046875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.630126953125,
+          "y_center": 0.2632357317112717,
+          "width": 0.16064453125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "file_name": "000017.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.236083984375,
+          "y_center": 0.3581834502065844,
+          "width": 0.14990234375,
+          "height": 0.078125
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.7496337890625,
+          "y_center": 0.9476024749501352,
+          "width": 0.197998046875,
+          "height": 0.10479505009972984
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.8680419921875,
+          "y_center": 0.09992108626955098,
+          "width": 0.101806640625,
+          "height": 0.199842172439102
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.1246337890625,
+          "y_center": 0.12582302482894414,
+          "width": 0.161376953125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.193359375,
+          "y_center": 0.0185575231143702,
+          "width": 0.13134765625,
+          "height": 0.015625
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "file_name": "000018.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.781982421875,
+          "y_center": 0.5368376112406487,
+          "width": 0.15673828125,
+          "height": 0.21875
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.26416015625,
+          "y_center": 0.21326638229292227,
+          "width": 0.1171875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.3468017578125,
+          "y_center": 0.9049474201407205,
+          "width": 0.190185546875,
+          "height": 0.19010515971855893
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.7333984375,
+          "y_center": 0.8787849774690683,
+          "width": 0.197265625,
+          "height": 0.06913562492086558
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.6201171875,
+          "y_center": 0.5780250798508095,
+          "width": 0.11376953125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "file_name": "000019.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.4949951171875,
+          "y_center": 0.09681193899246343,
+          "width": 0.153076171875,
+          "height": 0.19362387788492694
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.0826416015625,
+          "y_center": 0.6408650283164226,
+          "width": 0.121337890625,
+          "height": 0.0625
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.234130859375,
+          "y_center": 0.2460475246799828,
+          "width": 0.19189453125,
+          "height": 0.0625
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "file_name": "000020.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.762451171875,
+          "y_center": 0.602895300587232,
+          "width": 0.10888671875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.9136962890625,
+          "y_center": 0.7555491955165907,
+          "width": 0.171142578125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "file_name": "000021.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.738525390625,
+          "y_center": 0.5566825374846931,
+          "width": 0.15576171875,
+          "height": 0.203125
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.526611328125,
+          "y_center": 0.30677798774545983,
+          "width": 0.185546875,
+          "height": 0.203125
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.45068359375,
+          "y_center": 0.5426151282660227,
+          "width": 0.154296875,
+          "height": 0.203125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.2850341796875,
+          "y_center": 0.27541673335032457,
+          "width": 0.130615234375,
+          "height": 0.265625
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.9112548828125,
+          "y_center": 0.5853277715156084,
+          "width": 0.114013671875,
+          "height": 0.171875
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "file_name": "000022.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.575927734375,
+          "y_center": 0.5972724114686656,
+          "width": 0.15625,
+          "height": 0.125
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.2271728515625,
+          "y_center": 0.715332339246981,
+          "width": 0.115478515625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "file_name": "000023.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.684814453125,
+          "y_center": 0.5066439125265131,
+          "width": 0.14404296875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.336181640625,
+          "y_center": 0.7722883437205212,
+          "width": 0.12841796875,
+          "height": 0.296875
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.3382568359375,
+          "y_center": 0.10600050417790297,
+          "width": 0.176025390625,
+          "height": 0.140625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.62548828125,
+          "y_center": 0.7797128733567045,
+          "width": 0.1044921875,
+          "height": 0.125
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "file_name": "000024.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 25,
+      "file_name": "000025.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.304443359375,
+          "y_center": 0.3778497669010128,
+          "width": 0.12744140625,
+          "height": 0.265625
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.7391357421875,
+          "y_center": 0.9611464730637176,
+          "width": 0.140869140625,
+          "height": 0.07770705387256491
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.4423828125,
+          "y_center": 0.23217163669930818,
+          "width": 0.1044921875,
+          "height": 0.296875
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "file_name": "000026.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.59765625,
+          "y_center": 0.9552431440398519,
+          "width": 0.18310546875,
+          "height": 0.08951371192029621
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "file_name": "000027.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.189208984375,
+          "y_center": 0.4065733796691634,
+          "width": 0.1435546875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.479248046875,
+          "y_center": 0.48716360006969606,
+          "width": 0.1279296875,
+          "height": 0.125
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "file_name": "000028.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.782958984375,
+          "y_center": 0.4462140963195196,
+          "width": 0.125,
+          "height": 0.046875
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.520751953125,
+          "y_center": 0.028462517813432453,
+          "width": 0.12841796875,
+          "height": 0.056925035526864884
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "file_name": "000029.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.4937744140625,
+          "y_center": 0.019089674475469054,
+          "width": 0.191650390625,
+          "height": 0.03817934885093821
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.41796875,
+          "y_center": 0.7963806736794339,
+          "width": 0.17529296875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.6492919921875,
+          "y_center": 0.7642887020000269,
+          "width": 0.152099609375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "file_name": "000030.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.2503662109375,
+          "y_center": 0.5091262080760546,
+          "width": 0.106689453125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "file_name": "000031.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.2672119140625,
+          "y_center": 0.43785878944896095,
+          "width": 0.185302734375,
+          "height": 0.25
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.8258056640625,
+          "y_center": 0.6110079563683659,
+          "width": 0.115478515625,
+          "height": 0.265625
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "file_name": "000032.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.177490234375,
+          "y_center": 0.7438082665260981,
+          "width": 0.12548828125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "file_name": "000033.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.1400146484375,
+          "y_center": 0.5356261935219452,
+          "width": 0.186767578125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.743896484375,
+          "y_center": 0.44432701047051404,
+          "width": 0.1875,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "file_name": "000034.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.896484375,
+          "y_center": 0.3874842824265027,
+          "width": 0.18115234375,
+          "height": 0.171875
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "file_name": "000035.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.1898193359375,
+          "y_center": 0.17040283086043795,
+          "width": 0.188232421875,
+          "height": 0.1875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.604736328125,
+          "y_center": 0.32310247402494063,
+          "width": 0.10400390625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "file_name": "000036.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.1790771484375,
+          "y_center": 0.022862494941746858,
+          "width": 0.126708984375,
+          "height": 0.04572498978349371
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.70361328125,
+          "y_center": 0.5022285535889062,
+          "width": 0.10986328125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.23974609375,
+          "y_center": 0.730181753751266,
+          "width": 0.10205078125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.52734375,
+          "y_center": 0.9795794087709818,
+          "width": 0.1396484375,
+          "height": 0.0408411824580363
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.40771484375,
+          "y_center": 0.5239144747363884,
+          "width": 0.142578125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "file_name": "000037.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.1966552734375,
+          "y_center": 0.38743122824482557,
+          "width": 0.161376953125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.3106689453125,
+          "y_center": 0.8919662001961071,
+          "width": 0.156494140625,
+          "height": 0.21606759960778588
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "file_name": "000038.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.872802734375,
+          "y_center": 0.9464789790484819,
+          "width": 0.16064453125,
+          "height": 0.10704204190303628
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.7237548828125,
+          "y_center": 0.5645845308525155,
+          "width": 0.151611328125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "file_name": "000039.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.2744140625,
+          "y_center": 0.25533586075519055,
+          "width": 0.19921875,
+          "height": 0.265625
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "file_name": "000040.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 41,
+      "file_name": "000041.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.879638671875,
+          "y_center": 0.9331093115802154,
+          "width": 0.15478515625,
+          "height": 0.046875
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.639404296875,
+          "y_center": 0.6115338202250765,
+          "width": 0.15966796875,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "file_name": "000042.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.42822265625,
+          "y_center": 0.5664907063349822,
+          "width": 0.1494140625,
+          "height": 0.140625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.591552734375,
+          "y_center": 0.37243704307970293,
+          "width": 0.1298828125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.7615966796875,
+          "y_center": 0.08539209697678596,
+          "width": 0.108154296875,
+          "height": 0.17078419385357174
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.183349609375,
+          "y_center": 0.06365032842637641,
+          "width": 0.19140625,
+          "height": 0.1273006567527526
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.6912841796875,
+          "y_center": 0.7055455349275287,
+          "width": 0.177490234375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "file_name": "000043.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.4332275390625,
+          "y_center": 0.9267877384711942,
+          "width": 0.113037109375,
+          "height": 0.0625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.78955078125,
+          "y_center": 0.5259260710570373,
+          "width": 0.15625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.6619873046875,
+          "y_center": 0.05290587255406454,
+          "width": 0.176025390625,
+          "height": 0.10581174500812897
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.4051513671875,
+          "y_center": 0.2028113099178731,
+          "width": 0.192626953125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "file_name": "000044.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.654541015625,
+          "y_center": 0.31704378593395255,
+          "width": 0.14697265625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.2720947265625,
+          "y_center": 0.3145898065970951,
+          "width": 0.127197265625,
+          "height": 0.046875
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.30712890625,
+          "y_center": 0.20905425063820715,
+          "width": 0.14794921875,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "file_name": "000045.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.3450927734375,
+          "y_center": 0.7625173642025321,
+          "width": 0.190185546875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.1026611328125,
+          "y_center": 0.6371968887821335,
+          "width": 0.195556640625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.7943115234375,
+          "y_center": 0.5678558667167849,
+          "width": 0.111572265625,
+          "height": 0.296875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.6466064453125,
+          "y_center": 0.7781288680860194,
+          "width": 0.155029296875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.6876220703125,
+          "y_center": 0.08338988976401107,
+          "width": 0.168701171875,
+          "height": 0.16677977942802227
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "file_name": "000046.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.5802001953125,
+          "y_center": 0.7124922530418818,
+          "width": 0.114013671875,
+          "height": 0.078125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.168212890625,
+          "y_center": 0.8337154758073549,
+          "width": 0.138671875,
+          "height": 0.33256904838529017
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.7216796875,
+          "y_center": 0.38857904170553303,
+          "width": 0.17578125,
+          "height": 0.046875
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.091796875,
+          "y_center": 0.42259800206148723,
+          "width": 0.16796875,
+          "height": 0.078125
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.3956298828125,
+          "y_center": 0.2681535962849477,
+          "width": 0.127197265625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "file_name": "000047.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.18994140625,
+          "y_center": 0.30955130149135257,
+          "width": 0.1982421875,
+          "height": 0.09375
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.861572265625,
+          "y_center": 0.08757731452172124,
+          "width": 0.17626953125,
+          "height": 0.17515462894344247
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.8572998046875,
+          "y_center": 0.5041088564404926,
+          "width": 0.104736328125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "file_name": "000048.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.1868896484375,
+          "y_center": 0.9088739060218373,
+          "width": 0.173583984375,
+          "height": 0.09375
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.605712890625,
+          "y_center": 0.11526625136664137,
+          "width": 0.17333984375,
+          "height": 0.140625
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.549560546875,
+          "y_center": 0.7108670498630568,
+          "width": 0.1357421875,
+          "height": 0.09375
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "file_name": "000049.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.112060546875,
+          "y_center": 0.8046414400245245,
+          "width": 0.15087890625,
+          "height": 0.0625
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.4715576171875,
+          "y_center": 0.5470582656050402,
+          "width": 0.123779296875,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "file_name": "000050.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.2501220703125,
+          "y_center": 0.34554200547784975,
+          "width": 0.177490234375,
+          "height": 0.03125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.8291015625,
+          "y_center": 0.5247324407919465,
+          "width": 0.13134765625,
+          "height": 0.390625
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.7686767578125,
+          "y_center": 0.8466618635222689,
+          "width": 0.164306640625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.4217529296875,
+          "y_center": 0.7166474974963182,
+          "width": 0.125732421875,
+          "height": 0.234375
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "file_name": "000051.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.1048583984375,
+          "y_center": 0.627643621798031,
+          "width": 0.167236328125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.7401123046875,
+          "y_center": 0.46680457449121127,
+          "width": 0.108154296875,
+          "height": 0.060913861191047136
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.561279296875,
+          "y_center": 0.7611009692931385,
+          "width": 0.18603515625,
+          "height": 0.09375
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.732421875,
+          "y_center": 0.6907400880568948,
+          "width": 0.16943359375,
+          "height": 0.171875
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.9095458984375,
+          "y_center": 0.28945932166555965,
+          "width": 0.166259765625,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "file_name": "000052.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.26806640625,
+          "y_center": 0.0627459439021697,
+          "width": 0.15966796875,
+          "height": 0.12549188770433933
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.479736328125,
+          "y_center": 0.46850305619767274,
+          "width": 0.1015625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.9393310546875,
+          "y_center": 0.7946411944472023,
+          "width": 0.108154296875,
+          "height": 0.078125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.3372802734375,
+          "y_center": 0.7496374433946533,
+          "width": 0.148681640625,
+          "height": 0.125
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "file_name": "000053.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.9287109375,
+          "y_center": 0.26783909063166944,
+          "width": 0.11962890625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "file_name": "000054.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.1756591796875,
+          "y_center": 0.6322646820701412,
+          "width": 0.194091796875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.6156005859375,
+          "y_center": 0.8132080184461765,
+          "width": 0.149169921875,
+          "height": 0.25
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "file_name": "000055.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.8321533203125,
+          "y_center": 0.6381533376921185,
+          "width": 0.161865234375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.0721435546875,
+          "y_center": 0.832766060670273,
+          "width": 0.138916015625,
+          "height": 0.203125
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.1409912109375,
+          "y_center": 0.5889401916047439,
+          "width": 0.157958984375,
+          "height": 0.140625
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.5321044921875,
+          "y_center": 0.3389347007389488,
+          "width": 0.195556640625,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "file_name": "000056.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.9063720703125,
+          "y_center": 0.7831320699849155,
+          "width": 0.102294921875,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "file_name": "000057.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 58,
+      "file_name": "000058.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.1689453125,
+          "y_center": 0.23643705492348532,
+          "width": 0.111328125,
+          "height": 0.21875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.1207275390625,
+          "y_center": 0.9126639506069723,
+          "width": 0.099853515625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.4818115234375,
+          "y_center": 0.902322975798442,
+          "width": 0.102783203125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "file_name": "000059.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 60,
+      "file_name": "000060.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.7379150390625,
+          "y_center": 0.1844115869794395,
+          "width": 0.180908203125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.909423828125,
+          "y_center": 0.47469683502686266,
+          "width": 0.13525390625,
+          "height": 0.265625
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.44775390625,
+          "y_center": 0.41508570462698446,
+          "width": 0.18798828125,
+          "height": 0.0625
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.684326171875,
+          "y_center": 0.605515081353746,
+          "width": 0.1748046875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.312255859375,
+          "y_center": 0.6869572055446791,
+          "width": 0.15380859375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "file_name": "000061.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.2139892578125,
+          "y_center": 0.7602322437256896,
+          "width": 0.176025390625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.8577880859375,
+          "y_center": 0.34099130352737483,
+          "width": 0.114990234375,
+          "height": 0.15625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.5238037109375,
+          "y_center": 0.5774148464469955,
+          "width": 0.130126953125,
+          "height": 0.203125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.88623046875,
+          "y_center": 0.7354117120665628,
+          "width": 0.15283203125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "file_name": "000062.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.7271728515625,
+          "y_center": 0.5327345272319439,
+          "width": 0.107177734375,
+          "height": 0.015625
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.2254638671875,
+          "y_center": 0.7526532653983948,
+          "width": 0.179931640625,
+          "height": 0.046875
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.1873779296875,
+          "y_center": 0.4304423315067569,
+          "width": 0.179443359375,
+          "height": 0.140625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.57958984375,
+          "y_center": 0.614037979900837,
+          "width": 0.10888671875,
+          "height": 0.359375
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "file_name": "000063.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 64,
+      "file_name": "000064.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.575439453125,
+          "y_center": 0.35909133610409316,
+          "width": 0.1455078125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.65673828125,
+          "y_center": 0.1760210074897811,
+          "width": 0.162109375,
+          "height": 0.140625
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.8984375,
+          "y_center": 0.7530101235391866,
+          "width": 0.1435546875,
+          "height": 0.296875
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.192626953125,
+          "y_center": 0.9796143269271165,
+          "width": 0.1904296875,
+          "height": 0.04077134614576688
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "file_name": "000065.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.15576171875,
+          "y_center": 0.1172496403288904,
+          "width": 0.12744140625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "file_name": "000066.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.4642333984375,
+          "y_center": 0.6410832772139268,
+          "width": 0.114013671875,
+          "height": 0.078125
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.6822509765625,
+          "y_center": 0.049783008943230844,
+          "width": 0.155029296875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.4501953125,
+          "y_center": 0.8987532222620567,
+          "width": 0.12353515625,
+          "height": 0.20249355547588674
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.751220703125,
+          "y_center": 0.18285181221725877,
+          "width": 0.19091796875,
+          "height": 0.203125
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "file_name": "000067.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.8636474609375,
+          "y_center": 0.07988855489564561,
+          "width": 0.141845703125,
+          "height": 0.15977710969129102
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.1881103515625,
+          "y_center": 0.8973387731971143,
+          "width": 0.163330078125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "file_name": "000068.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.1143798828125,
+          "y_center": 0.35027033936319607,
+          "width": 0.121337890625,
+          "height": 0.296875
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.4989013671875,
+          "y_center": 0.8888759749263249,
+          "width": 0.176025390625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "file_name": "000069.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.679931640625,
+          "y_center": 0.16226579420583964,
+          "width": 0.17236328125,
+          "height": 0.125
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.0697021484375,
+          "y_center": 0.8889961849774832,
+          "width": 0.103759765625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "file_name": "000070.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 71,
+      "file_name": "000071.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 72,
+      "file_name": "000072.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 73,
+      "file_name": "000073.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.4661865234375,
+          "y_center": 0.7011691832895856,
+          "width": 0.192138671875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.85546875,
+          "y_center": 0.28328487844441885,
+          "width": 0.19384765625,
+          "height": 0.125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.383056640625,
+          "y_center": 0.9459916262500762,
+          "width": 0.11669921875,
+          "height": 0.10801674749984788
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.4097900390625,
+          "y_center": 0.1608946807129087,
+          "width": 0.111083984375,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "file_name": "000074.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 75,
+      "file_name": "000075.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.188232421875,
+          "y_center": 0.3228217355751163,
+          "width": 0.19775390625,
+          "height": 0.21875
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.1182861328125,
+          "y_center": 0.4890902747939797,
+          "width": 0.133544921875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.4365234375,
+          "y_center": 0.9404364660070383,
+          "width": 0.1162109375,
+          "height": 0.11912706798592322
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.645751953125,
+          "y_center": 0.7961058757565714,
+          "width": 0.171875,
+          "height": 0.203125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.658935546875,
+          "y_center": 0.08873430353602807,
+          "width": 0.1484375,
+          "height": 0.17746860697205616
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "file_name": "000076.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.79052734375,
+          "y_center": 0.5321589075198971,
+          "width": 0.1904296875,
+          "height": 0.25
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "file_name": "000077.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.306640625,
+          "y_center": 0.15384771530962082,
+          "width": 0.19189453125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.902099609375,
+          "y_center": 0.42431131085707774,
+          "width": 0.18359375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.7298583984375,
+          "y_center": 0.732726543029192,
+          "width": 0.188720703125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.4490966796875,
+          "y_center": 0.6202813587187859,
+          "width": 0.141357421875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.7137451171875,
+          "y_center": 0.23981333301864094,
+          "width": 0.197998046875,
+          "height": 0.21875
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "file_name": "000078.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.57666015625,
+          "y_center": 0.15355719015638236,
+          "width": 0.16064453125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "file_name": "000079.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.368896484375,
+          "y_center": 0.22218242110214248,
+          "width": 0.103515625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.1507568359375,
+          "y_center": 0.9668599970788015,
+          "width": 0.149658203125,
+          "height": 0.06628000584239709
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.2874755859375,
+          "y_center": 0.01781225752824933,
+          "width": 0.175048828125,
+          "height": 0.03562451495649861
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.8160400390625,
+          "y_center": 0.4198877809567836,
+          "width": 0.174560546875,
+          "height": 0.265625
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.4166259765625,
+          "y_center": 0.5930424151251811,
+          "width": 0.184326171875,
+          "height": 0.296875
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "file_name": "000080.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 81,
+      "file_name": "000081.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 82,
+      "file_name": "000082.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.8892822265625,
+          "y_center": 0.152352119821341,
+          "width": 0.164306640625,
+          "height": 0.140625
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.6849365234375,
+          "y_center": 0.4407623593757465,
+          "width": 0.126220703125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "file_name": "000083.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.7196044921875,
+          "y_center": 0.0733919960341437,
+          "width": 0.113037109375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.3173828125,
+          "y_center": 0.23569251516898193,
+          "width": 0.146484375,
+          "height": 0.046875
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.4111328125,
+          "y_center": 0.444627508942947,
+          "width": 0.1357421875,
+          "height": 0.171875
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "file_name": "000084.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.439453125,
+          "y_center": 0.03486396647242995,
+          "width": 0.19482421875,
+          "height": 0.06972793284486001
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.4693603515625,
+          "y_center": 0.1573072887128779,
+          "width": 0.152587890625,
+          "height": 0.08542353356471555
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "file_name": "000085.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.37890625,
+          "y_center": 0.21908952855654895,
+          "width": 0.15771484375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.12158203125,
+          "y_center": 0.5708992111383007,
+          "width": 0.16845703125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "file_name": "000086.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.8154296875,
+          "y_center": 0.13667293312677442,
+          "width": 0.12353515625,
+          "height": 0.234375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.9017333984375,
+          "y_center": 0.9435753581153271,
+          "width": 0.133056640625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.0665283203125,
+          "y_center": 0.4735296951428395,
+          "width": 0.108154296875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.4698486328125,
+          "y_center": 0.9596531174135767,
+          "width": 0.171630859375,
+          "height": 0.08069376517284671
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.7926025390625,
+          "y_center": 0.5275150162028933,
+          "width": 0.105712890625,
+          "height": 0.296875
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "file_name": "000087.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.4818115234375,
+          "y_center": 0.06890899841052534,
+          "width": 0.196533203125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "file_name": "000088.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.3104248046875,
+          "y_center": 0.3715056872030824,
+          "width": 0.143798828125,
+          "height": 0.265625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.835693359375,
+          "y_center": 0.549802959184161,
+          "width": 0.19921875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.530517578125,
+          "y_center": 0.20792148183030623,
+          "width": 0.197265625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "file_name": "000089.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.6922607421875,
+          "y_center": 0.9013881392588847,
+          "width": 0.178955078125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.1070556640625,
+          "y_center": 0.8700640650061232,
+          "width": 0.151611328125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.400146484375,
+          "y_center": 0.8105851999017913,
+          "width": 0.13671875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.11083984375,
+          "y_center": 0.219408447113856,
+          "width": 0.14306640625,
+          "height": 0.09375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.333251953125,
+          "y_center": 0.4047530238369913,
+          "width": 0.13330078125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "file_name": "000090.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.4683837890625,
+          "y_center": 0.3504800668024549,
+          "width": 0.115478515625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.8638916015625,
+          "y_center": 0.9383580467813459,
+          "width": 0.108154296875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.6397705078125,
+          "y_center": 0.8216308639260644,
+          "width": 0.118896484375,
+          "height": 0.078125
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.7581787109375,
+          "y_center": 0.09732309089477209,
+          "width": 0.154052734375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.3922119140625,
+          "y_center": 0.15349098073942702,
+          "width": 0.171630859375,
+          "height": 0.30698196137885386
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "file_name": "000091.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 92,
+      "file_name": "000092.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 93,
+      "file_name": "000093.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.4691162109375,
+          "y_center": 0.6162558907935936,
+          "width": 0.140869140625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.440185546875,
+          "y_center": 0.3160182893465505,
+          "width": 0.1875,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "file_name": "000094.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.6695556640625,
+          "y_center": 0.3711502765811251,
+          "width": 0.149658203125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.8121337890625,
+          "y_center": 0.642738906223709,
+          "width": 0.162353515625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "file_name": "000095.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 96,
+      "file_name": "000096.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.2945556640625,
+          "y_center": 0.2935389836253346,
+          "width": 0.182861328125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "file_name": "000097.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 7,
+          "x_center": 0.190185546875,
+          "y_center": 0.6883615343550322,
+          "width": 0.18115234375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.34814453125,
+          "y_center": 0.31153183953762076,
+          "width": 0.16796875,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "file_name": "000098.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.5843505859375,
+          "y_center": 0.9543624285763835,
+          "width": 0.147216796875,
+          "height": 0.0912751428472328
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.1920166015625,
+          "y_center": 0.38723387534176734,
+          "width": 0.175537109375,
+          "height": 0.140625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.3380126953125,
+          "y_center": 0.031615971746353444,
+          "width": 0.132568359375,
+          "height": 0.06323194339270694
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.505615234375,
+          "y_center": 0.11788281842322568,
+          "width": 0.11669921875,
+          "height": 0.23576563674645135
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.3668212890625,
+          "y_center": 0.9595516551842524,
+          "width": 0.166259765625,
+          "height": 0.08089668963149511
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "file_name": "000099.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.7559814453125,
+          "y_center": 0.9478135469112238,
+          "width": 0.176513671875,
+          "height": 0.10437290617755252
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "file_name": "000100.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.86083984375,
+          "y_center": 0.3678632910132684,
+          "width": 0.10888671875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.743408203125,
+          "y_center": 0.44939478568352553,
+          "width": 0.10791015625,
+          "height": 0.0625
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "file_name": "000101.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 6,
+          "x_center": 0.5390625,
+          "y_center": 0.6710052682850882,
+          "width": 0.18310546875,
+          "height": 0.203125
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.239501953125,
+          "y_center": 0.8686740619247364,
+          "width": 0.18603515625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.867431640625,
+          "y_center": 0.5666598843714467,
+          "width": 0.10205078125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.228515625,
+          "y_center": 0.5509307000872827,
+          "width": 0.1494140625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.61376953125,
+          "y_center": 0.07089577339321207,
+          "width": 0.17919921875,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "file_name": "000102.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 103,
+      "file_name": "000103.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.83544921875,
+          "y_center": 0.6442297077239656,
+          "width": 0.14453125,
+          "height": 0.296875
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.5482177734375,
+          "y_center": 0.8310864943597125,
+          "width": 0.107666015625,
+          "height": 0.265625
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "file_name": "000104.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.3868408203125,
+          "y_center": 0.6322970349109727,
+          "width": 0.165771484375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "file_name": "000105.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.197021484375,
+          "y_center": 0.5549839983042699,
+          "width": 0.13232421875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.3424072265625,
+          "y_center": 0.3611697857937618,
+          "width": 0.129150390625,
+          "height": 0.046875
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.20703125,
+          "y_center": 0.16527577804930238,
+          "width": 0.14990234375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.822021484375,
+          "y_center": 0.08556307924703599,
+          "width": 0.1708984375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.5517578125,
+          "y_center": 0.8091977002512984,
+          "width": 0.140625,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "file_name": "000106.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 107,
+      "file_name": "000107.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.30615234375,
+          "y_center": 0.9159598530692835,
+          "width": 0.10986328125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.29736328125,
+          "y_center": 0.22433093951872862,
+          "width": 0.15673828125,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "file_name": "000108.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.687744140625,
+          "y_center": 0.5875655533055311,
+          "width": 0.19775390625,
+          "height": 0.125
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.138427734375,
+          "y_center": 0.051581680322826506,
+          "width": 0.14794921875,
+          "height": 0.10316336054565282
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.68896484375,
+          "y_center": 0.21889099710727555,
+          "width": 0.14697265625,
+          "height": 0.203125
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.73486328125,
+          "y_center": 0.06648121164889076,
+          "width": 0.14208984375,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "file_name": "000109.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.1424560546875,
+          "y_center": 0.37295405007880333,
+          "width": 0.180908203125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.58154296875,
+          "y_center": 0.018189407076379283,
+          "width": 0.1552734375,
+          "height": 0.03637881405275865
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "file_name": "000110.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.639404296875,
+          "y_center": 0.8042666719830598,
+          "width": 0.1220703125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.627197265625,
+          "y_center": 0.9180321907417599,
+          "width": 0.17138671875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.1724853515625,
+          "y_center": 0.15990357316437886,
+          "width": 0.193115234375,
+          "height": 0.234375
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "file_name": "000111.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.8592529296875,
+          "y_center": 0.2793257050851171,
+          "width": 0.101806640625,
+          "height": 0.203125
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "file_name": "000112.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.7156982421875,
+          "y_center": 0.7170718599679742,
+          "width": 0.155029296875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.40966796875,
+          "y_center": 0.6680768241489048,
+          "width": 0.13671875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.771484375,
+          "y_center": 0.1456266067259805,
+          "width": 0.14892578125,
+          "height": 0.29125321335196114
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.193115234375,
+          "y_center": 0.6850783166284347,
+          "width": 0.1650390625,
+          "height": 0.28125
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "file_name": "000113.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.6578369140625,
+          "y_center": 0.9027795390913993,
+          "width": 0.185302734375,
+          "height": 0.1944409218172013
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.367919921875,
+          "y_center": 0.7757698348972648,
+          "width": 0.16455078125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.9366455078125,
+          "y_center": 0.291215101492332,
+          "width": 0.120849609375,
+          "height": 0.078125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.1680908203125,
+          "y_center": 0.2352658384705799,
+          "width": 0.113037109375,
+          "height": 0.078125
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.797607421875,
+          "y_center": 0.13300399005568786,
+          "width": 0.14599609375,
+          "height": 0.203125
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "file_name": "000114.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.2342529296875,
+          "y_center": 0.7207765423088559,
+          "width": 0.109130859375,
+          "height": 0.078125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.3638916015625,
+          "y_center": 0.4530603140725783,
+          "width": 0.122314453125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.2109375,
+          "y_center": 0.2587099023491879,
+          "width": 0.14501953125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.89208984375,
+          "y_center": 0.5805071972567719,
+          "width": 0.1826171875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.6204833984375,
+          "y_center": 0.5002681290240305,
+          "width": 0.173583984375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "file_name": "000115.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.3497314453125,
+          "y_center": 0.4918202035689073,
+          "width": 0.197509765625,
+          "height": 0.296875
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.48876953125,
+          "y_center": 0.766087595404715,
+          "width": 0.18212890625,
+          "height": 0.046875
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.888671875,
+          "y_center": 0.536588229644921,
+          "width": 0.1103515625,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "file_name": "000116.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 117,
+      "file_name": "000117.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.19189453125,
+          "y_center": 0.24976124422613366,
+          "width": 0.17578125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.8909912109375,
+          "y_center": 0.8317898400398209,
+          "width": 0.159912109375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.9100341796875,
+          "y_center": 0.05208666096592307,
+          "width": 0.128662109375,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "file_name": "000118.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.760498046875,
+          "y_center": 0.05238257135811408,
+          "width": 0.14111328125,
+          "height": 0.1047651426162281
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.4931640625,
+          "y_center": 0.3110962397375757,
+          "width": 0.16748046875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.48193359375,
+          "y_center": 0.945870070205212,
+          "width": 0.107421875,
+          "height": 0.10825985958957617
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "file_name": "000119.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.193603515625,
+          "y_center": 0.9380054829154398,
+          "width": 0.15087890625,
+          "height": 0.12398903416912044
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.13623046875,
+          "y_center": 0.43634221832964615,
+          "width": 0.16943359375,
+          "height": 0.09375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.545166015625,
+          "y_center": 0.09931243808464152,
+          "width": 0.1875,
+          "height": 0.19862487606928303
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.7176513671875,
+          "y_center": 0.2772858898549764,
+          "width": 0.109619140625,
+          "height": 0.140625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.6317138671875,
+          "y_center": 0.8959672013744185,
+          "width": 0.172607421875,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "file_name": "000120.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 121,
+      "file_name": "000121.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.3973388671875,
+          "y_center": 0.6150931457858164,
+          "width": 0.112060546875,
+          "height": 0.171875
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.1773681640625,
+          "y_center": 0.02014570177378827,
+          "width": 0.152587890625,
+          "height": 0.04029140344757652
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.6429443359375,
+          "y_center": 0.6313314579407662,
+          "width": 0.107177734375,
+          "height": 0.390625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.8824462890625,
+          "y_center": 0.8287314155770418,
+          "width": 0.156494140625,
+          "height": 0.15625
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "file_name": "000122.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.7969970703125,
+          "y_center": 0.04886742256252352,
+          "width": 0.156005859375,
+          "height": 0.097734845025047
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.1864013671875,
+          "y_center": 0.09984289084387887,
+          "width": 0.109619140625,
+          "height": 0.140625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.783447265625,
+          "y_center": 0.3693059265422305,
+          "width": 0.18310546875,
+          "height": 0.265625
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "file_name": "000123.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.6925048828125,
+          "y_center": 0.3802216879154394,
+          "width": 0.154541015625,
+          "height": 0.234375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.641357421875,
+          "y_center": 0.828375884393068,
+          "width": 0.11279296875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.89599609375,
+          "y_center": 0.8152237485342754,
+          "width": 0.11279296875,
+          "height": 0.09375
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "file_name": "000124.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.193115234375,
+          "y_center": 0.10673671421157127,
+          "width": 0.1142578125,
+          "height": 0.078125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.745361328125,
+          "y_center": 0.3392026994360253,
+          "width": 0.17724609375,
+          "height": 0.078125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.6767578125,
+          "y_center": 0.08168907247136781,
+          "width": 0.17041015625,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.1416015625,
+          "y_center": 0.8571919767009466,
+          "width": 0.18359375,
+          "height": 0.046875
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "file_name": "000125.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 1,
+          "x_center": 0.2845458984375,
+          "y_center": 0.12997221328468755,
+          "width": 0.134521484375,
+          "height": 0.25994442646937493
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.233642578125,
+          "y_center": 0.49690624658104043,
+          "width": 0.18115234375,
+          "height": 0.15625
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.82080078125,
+          "y_center": 0.19818587817848377,
+          "width": 0.1376953125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.1339111328125,
+          "y_center": 0.7665757450955945,
+          "width": 0.192138671875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.2054443359375,
+          "y_center": 0.7892054482226897,
+          "width": 0.120849609375,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "file_name": "000126.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.20068359375,
+          "y_center": 0.32659408279093993,
+          "width": 0.16845703125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.4097900390625,
+          "y_center": 0.9616744036293647,
+          "width": 0.189208984375,
+          "height": 0.07665119274127055
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.609375,
+          "y_center": 0.7125895585945292,
+          "width": 0.16259765625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.6947021484375,
+          "y_center": 0.41301190784647934,
+          "width": 0.108642578125,
+          "height": 0.265625
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.8155517578125,
+          "y_center": 0.15804021989608052,
+          "width": 0.114013671875,
+          "height": 0.09375
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "file_name": "000127.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.20458984375,
+          "y_center": 0.1270925948279379,
+          "width": 0.107421875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.5516357421875,
+          "y_center": 0.6329275921207782,
+          "width": 0.165283203125,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "file_name": "000128.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.236328125,
+          "y_center": 0.3087008271913432,
+          "width": 0.1513671875,
+          "height": 0.203125
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.400634765625,
+          "y_center": 0.05869954816826317,
+          "width": 0.12548828125,
+          "height": 0.11739909623652632
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.8162841796875,
+          "y_center": 0.29014998196484576,
+          "width": 0.123779296875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.1270751953125,
+          "y_center": 0.07894780242401533,
+          "width": 0.128662109375,
+          "height": 0.15625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.7279052734375,
+          "y_center": 0.7437234546396617,
+          "width": 0.145751953125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "file_name": "000129.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.28564453125,
+          "y_center": 0.04763565795151792,
+          "width": 0.12060546875,
+          "height": 0.09527131580303581
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.5718994140625,
+          "y_center": 0.1421887980805976,
+          "width": 0.148193359375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "file_name": "000130.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 8,
+          "x_center": 0.72216796875,
+          "y_center": 0.8210244854510232,
+          "width": 0.17236328125,
+          "height": 0.125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.2884521484375,
+          "y_center": 0.4596994635865689,
+          "width": 0.134033203125,
+          "height": 0.109375
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.211669921875,
+          "y_center": 0.9617896317745565,
+          "width": 0.1435546875,
+          "height": 0.07642073645088719
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.3636474609375,
+          "y_center": 0.7772604555356039,
+          "width": 0.127197265625,
+          "height": 0.171875
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.630126953125,
+          "y_center": 0.6314433352050361,
+          "width": 0.12841796875,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "file_name": "000131.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 132,
+      "file_name": "000132.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.7811279296875,
+          "y_center": 0.2487554116532954,
+          "width": 0.103759765625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.5189208984375,
+          "y_center": 0.3930893619871302,
+          "width": 0.190185546875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.13427734375,
+          "y_center": 0.03915080815110339,
+          "width": 0.1953125,
+          "height": 0.07830161620220663
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "file_name": "000133.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.349853515625,
+          "y_center": 0.24088656427559396,
+          "width": 0.166015625,
+          "height": 0.234375
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.65771484375,
+          "y_center": 0.9641280079583637,
+          "width": 0.15087890625,
+          "height": 0.07174398408327243
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.60400390625,
+          "y_center": 0.05597742120099369,
+          "width": 0.11279296875,
+          "height": 0.11195484230198739
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "file_name": "000134.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 2,
+          "x_center": 0.5728759765625,
+          "y_center": 0.6167339769174068,
+          "width": 0.100341796875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 9,
+          "x_center": 0.6376953125,
+          "y_center": 0.4907986708750257,
+          "width": 0.138671875,
+          "height": 0.046875
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.4200439453125,
+          "y_center": 0.17871888633436894,
+          "width": 0.139892578125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.463134765625,
+          "y_center": 0.8541096630958638,
+          "width": 0.1337890625,
+          "height": 0.125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.8111572265625,
+          "y_center": 0.5883230790077083,
+          "width": 0.189697265625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "file_name": "000135.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.7462158203125,
+          "y_center": 0.036628830550708646,
+          "width": 0.183837890625,
+          "height": 0.07325766100141733
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.31494140625,
+          "y_center": 0.8043365922621383,
+          "width": 0.15283203125,
+          "height": 0.09375
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.35888671875,
+          "y_center": 0.9666320474302709,
+          "width": 0.19189453125,
+          "height": 0.06673590513945828
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.1104736328125,
+          "y_center": 0.871082039070284,
+          "width": 0.133056640625,
+          "height": 0.140625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.6173095703125,
+          "y_center": 0.6859999187251629,
+          "width": 0.173583984375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "file_name": "000136.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.2794189453125,
+          "y_center": 0.3652841834097915,
+          "width": 0.190673828125,
+          "height": 0.265625
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.32763671875,
+          "y_center": 0.6487714391632415,
+          "width": 0.111328125,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "file_name": "000137.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 5,
+          "x_center": 0.8653564453125,
+          "y_center": 0.3799616052098461,
+          "width": 0.189697265625,
+          "height": 0.078125
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.166015625,
+          "y_center": 0.10018511985725942,
+          "width": 0.13916015625,
+          "height": 0.20037023961451883
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "file_name": "000138.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.2288818359375,
+          "y_center": 0.5907271400190983,
+          "width": 0.175537109375,
+          "height": 0.265625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.4315185546875,
+          "y_center": 0.49594463869389294,
+          "width": 0.197509765625,
+          "height": 0.265625
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.11572265625,
+          "y_center": 0.45499383232675683,
+          "width": 0.17822265625,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "file_name": "000139.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 140,
+      "file_name": "000140.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.1488037109375,
+          "y_center": 0.47130592634584145,
+          "width": 0.100341796875,
+          "height": 0.078125
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "file_name": "000141.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.3343505859375,
+          "y_center": 0.1730621681080423,
+          "width": 0.101806640625,
+          "height": 0.140625
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "file_name": "000142.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.8172607421875,
+          "y_center": 0.746027144686668,
+          "width": 0.195068359375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.7510986328125,
+          "y_center": 0.3349133533072254,
+          "width": 0.155517578125,
+          "height": 0.203125
+        },
+        {
+          "class_id": 0,
+          "x_center": 0.219482421875,
+          "y_center": 0.6854828836906967,
+          "width": 0.1630859375,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "file_name": "000143.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.635498046875,
+          "y_center": 0.788973048740236,
+          "width": 0.158203125,
+          "height": 0.140625
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.3983154296875,
+          "y_center": 0.4756298037398051,
+          "width": 0.106201171875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.2540283203125,
+          "y_center": 0.1421279820728104,
+          "width": 0.159912109375,
+          "height": 0.171875
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.094482421875,
+          "y_center": 0.40623254282239774,
+          "width": 0.185546875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.357666015625,
+          "y_center": 0.7182277339550411,
+          "width": 0.12451171875,
+          "height": 0.3125
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "file_name": "000144.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 4,
+          "x_center": 0.308837890625,
+          "y_center": 0.5224339232035714,
+          "width": 0.119140625,
+          "height": 0.171875
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "file_name": "000145.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.5770263671875,
+          "y_center": 0.7104594351470737,
+          "width": 0.154052734375,
+          "height": 0.4375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.0718994140625,
+          "y_center": 0.123871887776687,
+          "width": 0.135498046875,
+          "height": 0.109375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.875244140625,
+          "y_center": 0.6145112951238405,
+          "width": 0.18115234375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 4,
+          "x_center": 0.6578369140625,
+          "y_center": 0.10446359154284968,
+          "width": 0.177490234375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.853515625,
+          "y_center": 0.24082760837811357,
+          "width": 0.1982421875,
+          "height": 0.109375
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "file_name": "000146.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 9,
+          "x_center": 0.4439697265625,
+          "y_center": 0.6042041082677814,
+          "width": 0.109130859375,
+          "height": 0.046875
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.543212890625,
+          "y_center": 0.40866977589654796,
+          "width": 0.10400390625,
+          "height": 0.265625
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "file_name": "000147.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 0,
+          "x_center": 0.6224365234375,
+          "y_center": 0.9724953423599927,
+          "width": 0.187255859375,
+          "height": 0.055009315280014646
+        },
+        {
+          "class_id": 7,
+          "x_center": 0.5653076171875,
+          "y_center": 0.324683661463943,
+          "width": 0.107177734375,
+          "height": 0.109375
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.5638427734375,
+          "y_center": 0.18462087168805175,
+          "width": 0.112548828125,
+          "height": 0.359375
+        },
+        {
+          "class_id": 8,
+          "x_center": 0.3282470703125,
+          "y_center": 0.08785263202244942,
+          "width": 0.119873046875,
+          "height": 0.171875
+        },
+        {
+          "class_id": 5,
+          "x_center": 0.552490234375,
+          "y_center": 0.8248696456906188,
+          "width": 0.1826171875,
+          "height": 0.125
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "file_name": "000148.png",
+      "width": 64,
+      "height": 64,
+      "annotations": []
+    },
+    {
+      "id": 149,
+      "file_name": "000149.png",
+      "width": 64,
+      "height": 64,
+      "annotations": [
+        {
+          "class_id": 3,
+          "x_center": 0.071533203125,
+          "y_center": 0.07828460396209747,
+          "width": 0.1396484375,
+          "height": 0.1565692078241951
+        },
+        {
+          "class_id": 6,
+          "x_center": 0.360107421875,
+          "y_center": 0.6770487176450357,
+          "width": 0.19921875,
+          "height": 0.140625
+        },
+        {
+          "class_id": 3,
+          "x_center": 0.2529296875,
+          "y_center": 0.9304092265862968,
+          "width": 0.18115234375,
+          "height": 0.125
+        },
+        {
+          "class_id": 1,
+          "x_center": 0.48828125,
+          "y_center": 0.08122770572727578,
+          "width": 0.1953125,
+          "height": 0.16245541135455155
+        },
+        {
+          "class_id": 2,
+          "x_center": 0.5400390625,
+          "y_center": 0.4398666536296022,
+          "width": 0.11962890625,
+          "height": 0.359375
+        }
+      ]
+    }
+  ]
+}

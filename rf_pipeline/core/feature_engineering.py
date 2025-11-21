@@ -6,7 +6,7 @@ import numpy as np
 import pywt
 from scipy.stats import skew, kurtosis
 
-from roi_detection import ROI
+from core.roi_detection import ROI
 
 
 @dataclass

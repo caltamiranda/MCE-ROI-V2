@@ -1,0 +1,5 @@
+root: datasets/rf_benchmark/spectrograms_hdf5/test
+overwrite: true
+batch_size: 11
+num_workers: 4
+complete: true
