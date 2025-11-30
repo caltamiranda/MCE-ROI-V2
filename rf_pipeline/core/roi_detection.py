@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 from typing import List, Tuple
 import numpy as np
-from scipy.ndimage import median_filter, gaussian_filter, label, find_objects, binary_dilation, binary_closing, generate_binary_structure
+from scipy.ndimage import label, find_objects, binary_dilation, generate_binary_structure
+from scipy.ndimage import morphology
 
 @dataclass
 class ROI:
@@ -9,105 +10,115 @@ class ROI:
     score: float
     snr_db: float = 0.0
 
-class ROIDetector:
+class AdaptiveROIDetector:
     """
-    Detector Robusto basado en Estadística de Ruido (Z-Score / CFAR-like).
-    No depende de umbrales absolutos, sino de desviaciones estándar sobre el fondo.
+    SOTA Statistical Detector: FCME (Forward Consecutive Mean Excision) + Hysteresis.
+    
+    1. Auto-ajuste: Estima iterativamente el piso de ruido real excluyendo señales.
+    2. Precisión: Usa umbralización dual (Histéresis) para expandir detecciones fuertes 
+       hacia sus bordes débiles sin capturar ruido aislado.
     """
 
     def __init__(
         self,
-        # --- Parámetros Estadísticos ---
-        method: str = "zscore",   # zscore (Recomendado) o adaptive (Legacy)
-        z_thresh: float = 3.5,    # Umbral Z-Score: >3.0 detecta el 99.7% de anomalías
-        background_window: int = 35, # Ventana grande para estimar el piso de ruido
+        # --- Parámetros de Histéresis (Auto-ajuste) ---
+        high_sigma: float = 4.0,  # Semillas fuertes (Certeza absoluta)
+        low_sigma: float = 2.0,   # Bordes débiles (Alta sensibilidad)
         
-        # --- Pre-procesamiento ---
-        gauss_sigma: float = 1.0, # Suavizado leve para reducir picos de ruido
+        # --- Parámetros FCME ---
+        max_iterations: int = 10,
+        convergence_tol: float = 0.05,
         
-        # --- Post-procesamiento (Geometría) ---
-        min_area: int = 10,       # Área mínima en píxeles
-        min_ar: float = 0.1,      # Aspect Ratio mínimo
-        max_ar: float = 20.0,     # Aspect Ratio máximo
-        merge_dist: int = 3,      # Distancia para unir cajas fragmentadas
-        
-        # --- Legacy (Para compatibilidad si usas method='adaptive') ---
-        adaptive_k: float = -0.2,
-        adaptive_window: int = 15,
-        margin_bins: int = 1,
-        min_texture: float = 0.0
+        # --- Geometría ---
+        min_area: int = 10,
+        merge_dist: int = 5,      # Distancia de fusión
     ):
-        self.method = method
-        self.z_thresh = z_thresh
-        self.bg_win = background_window
-        self.gauss_sigma = gauss_sigma
+        self.high_sigma = high_sigma
+        self.low_sigma = low_sigma
+        self.max_iters = max_iterations
+        self.tol = convergence_tol
         self.min_area = min_area
-        self.min_ar = min_ar
-        self.max_ar = max_ar
         self.merge_dist = merge_dist
-        
-        # Legacy
-        self.adaptive_k = adaptive_k
-        self.adaptive_window = adaptive_window
-        self.margin_bins = margin_bins
 
-    def _compute_zscore_mask(self, img: np.ndarray) -> np.ndarray:
+    def _fcme_noise_estimation(self, img: np.ndarray) -> Tuple[float, float]:
         """
-        1. Estima el fondo usando filtro de mediana (ignora los picos de señal).
-        2. Calcula la desviación estándar del ruido (MAD: Median Absolute Deviation).
-        3. Genera mapa Z: (Img - Fondo) / Ruido.
+        Forward Consecutive Mean Excision (Simplificado y Vectorizado).
+        Encuentra mu y sigma del RUIDO PURO iterativamente.
         """
-        # 1. Estimación robusta del fondo (Median Filter ignora señales cortas)
-        # Usamos una ventana grande para capturar la tendencia del piso de ruido
-        background = median_filter(img, size=self.bg_win)
+        # Aplanar y ordenar intensidades
+        arr = img.ravel()
+        # Submuestreo para velocidad si es muy grande
+        if arr.size > 100000:
+            arr = np.random.choice(arr, 100000, replace=False)
         
-        # 2. Estimación robusta de la desviación (ruido)
-        # MAD = median(|x - median(x)|) -> sigma ~ 1.4826 * MAD
-        diff = np.abs(img - background)
-        noise_mad = median_filter(diff, size=self.bg_win)
-        noise_sigma = 1.4826 * noise_mad
+        # Inicialización robusta usando mediana (menos sensible a outliers que mean)
+        mu = np.median(arr)
+        sigma = 1.4826 * np.median(np.abs(arr - mu)) # MAD sigma
         
-        # Evitar división por cero
-        noise_sigma = np.maximum(noise_sigma, 1e-6)
-        
-        # 3. Mapa Z
-        z_map = (img - background) / noise_sigma
-        
-        return z_map > self.z_thresh
+        # Iteración (Auto-ajuste)
+        for _ in range(self.max_iters):
+            # Criterio de corte actual: mu + 3*sigma (asumiendo que más allá es señal)
+            cutoff = mu + 3.0 * sigma
+            
+            # Seleccionar píxeles que parecen ruido
+            noise_pixels = arr[arr < cutoff]
+            
+            if noise_pixels.size == 0: break # Evitar error si todo es señal
+            
+            new_mu = np.mean(noise_pixels)
+            new_sigma = np.std(noise_pixels)
+            
+            # Chequear convergencia
+            if abs(new_sigma - sigma) / (sigma + 1e-9) < self.tol:
+                mu, sigma = new_mu, new_sigma
+                break
+            
+            mu, sigma = new_mu, new_sigma
+            
+        return mu, sigma
 
     def detect(self, S_det: np.ndarray) -> List[ROI]:
         """
-        Detecta ROIs en el espectrograma (o canal de gradiente).
+        Detecta ROIs usando crecimiento de regiones por histéresis.
         """
         H, W = S_det.shape
         
-        # 1. Suavizado leve (Low-pass)
-        img = gaussian_filter(S_det, sigma=self.gauss_sigma)
+        # 1. Estimación Inteligente del Piso de Ruido (FCME)
+        noise_mu, noise_sigma = self._fcme_noise_estimation(S_det)
+        noise_sigma = max(noise_sigma, 1e-9) # Evitar div/0
         
-        # 2. Generar Máscara Binaria
-        if self.method == "zscore":
-            mask = self._compute_zscore_mask(img)
-        else:
-            # Fallback al método simple si se requiere
-            from scipy.ndimage import uniform_filter
-            mean = uniform_filter(img, size=self.adaptive_window)
-            thr = mean + self.adaptive_k * (mean - img.min())
-            mask = img > thr
-
-# 3. Limpieza Morfológica (Unir fragmentos cercanos)
+        # Normalizar imagen a espacio Z-score real basado en ruido limpio
+        z_img = (S_det - noise_mu) / noise_sigma
         
-        # CAMBIO: Closing ANISOTRÓPICO (Solo Horizontal)
-        # Usamos (1, 5) -> Une huecos de hasta 5 px en horizontal, 0 en vertical.
-        mask = binary_closing(mask, structure=np.ones((1, 5))) 
-
-        # Dilation ANISOTRÓPICA (Ya lo tenías, aseguramos que siga así)
+        # 2. Umbralización Dual (Histéresis)
+        # a) Semillas Fuertes: Señales obvias
+        strong_mask = z_img > self.high_sigma 
+        
+        # b) Máscara Débil: Todo lo que podría ser señal
+        weak_mask = z_img > self.low_sigma
+        
+        # 3. Reconstrucción Geodésica (Morphological Reconstruction)
+        # Expandir las semillas 'strong' dentro del territorio 'weak'.
+        # Solo sobrevivirá el 'weak' que toque a un 'strong'.
+        # Esto elimina ruido débil aislado pero conserva colas de señales fuertes.
+        
+        final_mask = morphology.binary_dilation(
+            strong_mask, 
+            mask=weak_mask, 
+            iterations=-1, # Iterar hasta que no cambie (reconstrucción completa)
+            structure=generate_binary_structure(2, 2) # Conectividad-8
+        )
+        
+        # 4. Post-Procesamiento (Unir fragmentos cercanos)
         if self.merge_dist > 0:
-            kernel_width = int(self.merge_dist * 2 + 1)
-            structure = np.ones((1, kernel_width), dtype=int)
-            mask = binary_dilation(mask, structure=structure)
+            # Closing horizontal agresivo (asumiendo señales continuas en tiempo)
+            final_mask = morphology.binary_closing(final_mask, structure=np.ones((1, 9)))
+            # Dilatación general para margen de seguridad
+            k = int(self.merge_dist * 2 + 1)
+            final_mask = binary_dilation(final_mask, structure=np.ones((k, k)))
 
-        # 4. Etiquetado (Connected Components)
-        labeled, num_feats = label(mask)
+        # 5. Extracción de Objetos
+        labeled, num_feats = label(final_mask)
         if num_feats == 0:
             return []
 
@@ -122,17 +133,16 @@ class ROIDetector:
             h, w = y2 - y1, x2 - x1
             area = h * w
             
-            # Filtros Geométricos
             if area < self.min_area: continue
-            ar = w / (h + 1e-6)
-            if not (self.min_ar <= ar <= self.max_ar): continue
             
-            # Calcular score (intensidad media dentro de la caja original)
-            score = float(np.mean(S_det[y1:y2, x1:x2]))
+            # Score: Promedio Z-score de la región (indica qué tan fuerte es respecto al ruido)
+            roi_z = np.mean(z_img[y1:y2, x1:x2])
             
-            # Ajuste fino de bordes (quitar el margen de dilatación si se quiere precisión)
-            # Aquí lo dejamos tal cual para asegurar que cubra la señal completa
+            # Estimación rápida de SNR db (basada en el piso estimado)
+            # Potencia Señal ~ roi_mean^2, Potencia Ruido ~ noise_sigma^2 (aprox en dominio lineal)
+            # Como S_det ya suele ser log o gradiente, usamos roi_z como proxy de confianza.
             
-            rois.append(ROI(y1, x1, y2, x2, score))
+            rois.append(ROI(y1, x1, y2, x2, score=float(roi_z)))
 
+        # Ordenar por confianza
         return sorted(rois, key=lambda r: r.score, reverse=True)

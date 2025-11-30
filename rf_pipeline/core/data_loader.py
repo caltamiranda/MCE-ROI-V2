@@ -12,11 +12,11 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
-
 from core.preprocessing import Preprocessor
 from core.feature_engineering import FeatureEngineer
 from core.visual_stream import VisualStream
 from core.roi_detection import ROI
+from core.snr_utils import roi_snr_db  # <--- Nuevo import para cálculo de SNR
 import config as cfg
 
 class H5HybridDetectionDataset(Dataset):
@@ -38,7 +38,7 @@ class H5HybridDetectionDataset(Dataset):
         return len(self.keys)
 
     def _meta_to_box(self, meta_group, S_shape):
-        """Lógica validada en pruebas.py"""
+        """Lógica validada para convertir metadata a bounding box [x1, y1, x2, y2]"""
         C, H, W = S_shape
         try:
             start = meta_group['start_in_samples'][()]
@@ -72,6 +72,7 @@ class H5HybridDetectionDataset(Dataset):
         return [x1, y1, x2, y2]
 
     def _get_negative_box(self, S_shape, gt_boxes):
+        """Genera una caja aleatoria que no solapa con ninguna GT (ruido puro)"""
         C, H, W = S_shape
         for _ in range(10):
             h = random.randint(5, H//2)
@@ -102,8 +103,8 @@ class H5HybridDetectionDataset(Dataset):
 
             # 2. Espectrograma + FFTSHIFT
             S_mce = self.pre.compute(iq)
-            S_mce = np.fft.fftshift(S_mce, axes=1) # CRÍTICO: Alinear freq negativa/positiva
-            S_det = S_mce[1] # Canal gradiente
+            S_mce = np.fft.fftshift(S_mce, axes=1) # Alinear freq negativa/positiva
+            S_det = S_mce[1] # Canal gradiente para features
 
             # 3. Obtener GT Boxes
             gt_boxes = []
@@ -123,7 +124,11 @@ class H5HybridDetectionDataset(Dataset):
         # --- MODO TRAIN (Crops Híbridos) ---
         # 50% Señal / 50% Ruido
         label = 1.0 if (gt_boxes and random.random() > 0.5) else 0.0
-        target_box = random.choice(gt_boxes) if label == 1.0 else self._get_negative_box(S_mce.shape, gt_boxes)
+        
+        if label == 1.0:
+            target_box = random.choice(gt_boxes)
+        else:
+            target_box = self._get_negative_box(S_mce.shape, gt_boxes)
         
         x1, y1, x2, y2 = target_box
         roi_obj = ROI(y1=y1, x1=x1, y2=y2, x2=x2, score=0.0)
@@ -136,6 +141,25 @@ class H5HybridDetectionDataset(Dataset):
         patches = self.vs.extract_patches(S_mce, [roi_obj])
         img = torch.tensor(patches[0], dtype=torch.float32) if (patches and patches[0] is not None) else torch.zeros((3, cfg.IMG_SIZE, cfg.IMG_SIZE))
 
-        return img, f_vec, torch.tensor(label, dtype=torch.long)
+        # C. Cálculo de Peso basado en SNR (Estrategia de Focalización)
+        # -------------------------------------------------------------
+        weight = 1.0 # Peso base para ruido o fallo de cálculo
+        if label == 1.0:
+            # Calcular SNR usando canal log-mag (S_mce[0])
+            # Nota: S_mce[0] ya está en escala logarítmica y normalizado aprox, 
+            # pero roi_snr_db espera intensidad relativa. Funciona aceptablemente 
+            # como proxy de "claridad visual".
+            snr_val = roi_snr_db(S_mce[0], roi_obj)
+            
+            if snr_val != float('-inf'):
+                snr_val = max(0, snr_val) # Clamp a 0 mínimo
+                # Lógica: 
+                # SNR 0 dB -> weight = 1.0 (tratar como normal)
+                # SNR 10 dB -> weight = 2.0 (penalizar doble si se falla)
+                # SNR >= 20 dB -> weight = 3.0 (penalizar triple, señal muy clara)
+                weight = 1.0 + min(2.0, snr_val / 10.0)
+        
+        # Devolvemos 4 valores: Input Visual, Input Features, Target, Loss Weight
+        return img, f_vec, torch.tensor(label, dtype=torch.long), torch.tensor(weight, dtype=torch.float32)
 
 def collate_eval(batch): return batch[0]
